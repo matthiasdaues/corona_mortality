@@ -1,0 +1,13 @@
+# A scrap for creating a 2x2 subplots plot in matplotlib:
+
+fig, axs = plt.subplots(2, 2)
+axs[0, 0].plot(death_vax_weekly.impfungen_biontech_min1_gi.diff())
+axs[0, 0].set_title('1st order differencing')          
+#axs[0, 1].plot_acf(death_vax_weekly.impfungen_biontech_min1_gi.diff().dropna(), ax = ax2)
+axs[0, 1].set_title('Axis [0, 1]')
+axs[1, 0].plot(death_vax_weekly.impfungen_biontech_min1_gi.diff().diff())
+axs[1, 0].set_title('2nd order differencing')
+#axs[1, 1].plot_acf(death_vax_weekly.impfungen_biontech_min1_gi.diff().diff().dropna(), ax = ax2)
+axs[1, 1].set_title('Axis [1, 1]')
+
+# 
