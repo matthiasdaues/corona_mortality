@@ -1,2 +1,2 @@
-# corona_mortality
+# vaccines_and_mortality
 Trying to understand corona vaccines and possible consequences for dying in Germany from public data sources.
